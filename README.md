@@ -27,5 +27,5 @@ This project builds a **regression model** to predict **temperature** using mult
 
 ---
 
-## 📁 Project Structure
+
 
