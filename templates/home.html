@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forest Fire Prediction</title>
+</head>
+<body>
+
+<h2>Algerian Forest Fire Prediction</h2>
+
+<form action="{{ url_for('predict_datapoint')}}" method="POST">
+
+    <label>Temperature:</label><br>
+    <input type="text" name="Temperature"  required="required"><br><br>
+
+    <label>Relative Humidity (RH):</label><br>
+    <input type="text" name="RH"  required="required"><br><br>
+
+    <label>Wind Speed (Ws):</label><br>
+    <input type="text" name="Ws"  required="required"><br><br>
+
+    <label>Rain:</label><br>
+    <input type="text" name="Rain"  required="required"><br><br>
+
+    <label>FFMC:</label><br>
+    <input type="text" name="FFMC"  required="required"><br><br>
+
+    <label>DMC:</label><br>
+    <input type="text" name="DMC"  required="required"><br><br>
+
+    <label>ISI:</label><br>
+    <input type="text" name="ISI"  required="required"><br><br>
+
+    <label>Classes</label><br>
+    <input type="text" name="Classes"  required="required"><br><br>
+    
+
+    <label>Region:</label><br>
+    <input type="texxt" name="Region" required="required"><br><br>
+
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+</form>
+
+<h2>
+    THE FWI prediction is {{results}}
+</h2>
+
+</body>
+</html>
